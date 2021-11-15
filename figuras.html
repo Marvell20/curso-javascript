@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Figuras geometricas</title>
+</head>
+<body>
+    <header>
+        <div class="main">
+            <img align="left" class="main-image" src="assets/square-circle-and-triangle-svgrepo-com.svg" alt="">
+            <h1 class="main-title">
+                Figuras geometricas
+            </h1>
+        </div>
+    </header>
+    <p class="center">Primer taller del curso de JavaScript, no es mucho pero es trabajo honesto.</p>
+    <br>
+    <div class="content">
+        <div class="main">
+            <div class="row">
+                <section>
+                    <div class="card">
+                        <div>
+                            <img align="left" class="image" src="assets/square-svgrepo-com.svg" alt="">
+                            <h2 class="title">
+                                Cuadrado
+                            </h2>
+                        </div>
+                        <form action="">
+                            <!-- <label>Escribe cuanto mide el lado de tu cuadrado:</label> -->
+                            <div class="form__group field">
+                                <input type="number" class="form__field" placeholder="Lado" id="InputCuadrado" required />
+                                <label for="InputCuadrado" class="form__label">Lado:</label>
+                            </div>
+                            <br>
+                            <div class="z-index-1">
+                                <button type="button" onclick="calcularPerimetroCuadrado()">
+                                    Calcular el perimetro
+                                </button>
+                                <button type="button" onclick="calcularAreaCuadrado()"> 
+                                    Calcular el area
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section>
+                    <div class="card">
+                        <div>
+                            <img align="left" class="image" src="assets/circle-svgrepo-com.svg" alt="">
+                            <h2 class="title">
+                                Circulo
+                            </h2>
+                        </div>
+                        <form action="">
+                            <div class="form__group field">
+                                <input type="number" class="form__field" placeholder="Radio" id="InputCirculo" required />
+                                <label for="InputCirculo" class="form__label">Radio:</label>
+                            </div>
+                            <br>
+                            <div class="z-index-1">
+                                <button type="button" onclick="calcularPerimetroCirculo()">
+                                    Calcular el perimetro
+                                </button>
+                                <button type="button" onclick="calcularAreaCirculo()"> 
+                                    Calcular el area
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+            <div class="row">
+                <section>
+                    <div class="card">
+                        <div>
+                            <img align="left" class="image" src="assets/triangle-fill-svgrepo-com.svg" alt="">
+                            <h2 class="title">
+                                Triangulo
+                            </h2>
+                        </div>
+                        <form action="">
+                            <div class="row">
+                                <div class="form__group">
+                                    <input type="number" class="form__field" placeholder="Lado a" id="InputLado1Triangulo" required />
+                                    <label for="InputLado1Triangulo" class="form__label">Lado a:</label>
+        
+                                </div>
+                                <div class="form__group">
+                                    <input type="number" class="form__field" placeholder="Lado b" id="InputLado2Triangulo" required />
+                                    <label for="InputLado2Triangulo" class="form__label">Lado b:</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form__group">
+                                    <input type="number" class="form__field" placeholder="Base" id="InputBaseTriangulo" required />
+                                    <label for="InputBaseTriangulo" class="form__label">Base:</label>
+                                </div>
+                                <div class="form__group">
+                                    <input type="number" class="form__field" placeholder="Altura" id="InputAlturaTriangulo" required />
+                                    <label for="InputAlturaTriangulo" class="form__label">Altura:</label>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="z-index-1">
+                                    <button type="button" onclick="calcularPerimetroTriangulo()">
+                                        Calcular el perimetro
+                                    </button>
+                                </div>
+                                <div class="z-index-1">
+                                    <button type="button" onclick="calcularAreaTriangulo()"> 
+                                        Calcular el area
+                                    </button>
+                                </div>
+                            </div>
+                        </form>        
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="./figuras.js"></script>
+</body>
+</html>
