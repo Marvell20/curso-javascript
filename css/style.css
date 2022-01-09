@@ -81,6 +81,7 @@ textarea{
     border-style:double;
     border-width: 5px;
     border-radius: 5px;
+    font-size:larger;
     resize: none;
     background-color: #F8F8F8;
 }
