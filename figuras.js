@@ -59,16 +59,35 @@ function calcularPerimetroCuadrado() {
     const input = document.getElementById("InputCuadrado");
     const value = input.value;
 
-    const perimetro = perimetroCuadrado(value);
-    alert(perimetro);
+    if (value != "" || NaN) {
+        const perimetro = perimetroCuadrado(value);
+        //alert(perimetro);
+    
+        const cuadrado = document.getElementById("cuadrado");
+        cuadrado.innerText = "El perimetro del cuadrado es: " + perimetro;
+    }else {
+        const cuadrado = document.getElementById("cuadrado");
+        cuadrado.innerText = "Ingresa un valor válido";
+    }
+
 }
 
 function calcularAreaCuadrado() {
     const input = document.getElementById("InputCuadrado");
     const value = input.value;
 
-    const area = areaCuadrado(value);
-    alert(area);
+    if (value != "" || NaN) {
+        const area = areaCuadrado(value);
+        //alert(area);
+
+        const cuadrado = document.getElementById("cuadrado");
+        cuadrado.innerText = "El area del cuadrado es: " + area;
+    } else {
+        const cuadrado = document.getElementById("cuadrado");
+        cuadrado.innerText = "Ingresa un valor válido";
+    }
+
+    
 }
 
 //Funciones Triangulo
@@ -81,8 +100,17 @@ function calcularPerimetroTriangulo() {
     const value2 = parseInt(input2.value);
     const value3 = parseInt(input3.value);
     
-    const perimetro = perimetroTriangulo(value, value2, value3);
-    alert(perimetro);
+    if (!isNaN(value) && !isNaN(value2) && !isNaN(value3)) {
+        const perimetro = perimetroTriangulo(value, value2, value3);
+        //alert(perimetro);
+
+        const triangulo = document.getElementById("triangulo");
+        triangulo.innerText = "El perimetro del triangulo es: " + perimetro;
+    } else {
+        const triangulo = document.getElementById("triangulo");
+        triangulo.innerText = "Ingresa un valor válido";
+    }
+
 }
 
 function calcularAreaTriangulo() {
@@ -92,8 +120,17 @@ function calcularAreaTriangulo() {
     const value = parseInt(input.value);
     const value2 = parseInt(input2.value);
 
-    const area = areaTriangulo(value,value2);
-    alert(area);
+    if (!isNaN(value) && !isNaN(value2)) {
+        const area = areaTriangulo(value,value2);
+        //alert(area);
+
+        const triangulo = document.getElementById("triangulo");
+        triangulo.innerText = "El area del triangulo es: " + area;
+    } else {
+        const triangulo = document.getElementById("triangulo");
+        triangulo.innerText = "Ingresa un valor válido";
+    }
+
 }
 
 //Funciones Circulo
@@ -102,8 +139,17 @@ function calcularPerimetroCirculo() {
 
     const value = parseInt(input.value);
 
-    const perimetro = perimetroCirculo(value);
-    alert(perimetro);
+    if (!isNaN(value)) {
+        const perimetro = perimetroCirculo(value);
+        //alert(perimetro);
+
+        const circulo = document.getElementById("circulo");
+        circulo.innerText = "El perimetro del circulo es: " + perimetro;
+    } else {
+        const circulo = document.getElementById("circulo");
+        circulo.innerText = "Ingresa un valor válido";
+    }
+    
 }
 
 function calcularAreaCirculo() {
@@ -111,8 +157,17 @@ function calcularAreaCirculo() {
 
     const value = parseInt(input.value);
 
-    const area = areaCirculo(value);
-    alert(area);
+    if (!isNaN(value)) {
+        const area = areaCirculo(value);
+        //alert(area);
+
+        const circulo = document.getElementById("circulo");
+        circulo.innerText = "El area del circulo es: " + area;
+    } else {
+        const circulo = document.getElementById("circulo");
+        circulo.innerText = "Ingresa un valor válido";
+    }
+    
 }
 
 function calcularAlturaTrianguloISO(lado1, lado2, base) {

@@ -72,6 +72,19 @@ button:hover::after {
     background-color: black;
 }
 
+textarea{
+    margin: 5px;;
+    width: 80%;
+    font-weight: 700;
+    outline: none;
+    border-color: black;
+    border-style:double;
+    border-width: 5px;
+    border-radius: 5px;
+    resize: none;
+    background-color: #F8F8F8;
+}
+
 h2,p{
     margin: 5px 0px;
 }
